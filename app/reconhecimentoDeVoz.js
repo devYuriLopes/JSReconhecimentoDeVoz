@@ -1,3 +1,5 @@
+import verificaSeOChutePossuiUmValorValido from "./validacao.js";
+
 const elementoChute = document.getElementById('chute')
 
 window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;

@@ -1,12 +1,12 @@
-function verificaSeOChutePossuiUmValorValido(chute) {
+export default function verificaSeOChutePossuiUmValorValido(chute) {
     const numero = +chute
 
-    if (chuteForInvalido(numero)) {
+    if (Number.isNaN) {
         elementoChute.innerHTML += '<div>Valor inválido</div>'
         return
     }
 
-    if (numeroForMaiorOuMenorQueOValorPermitido(numero)) {
+    if (numero > maiorValor || numero < menorValor) {
         elementoChute.innerHTML += `
         <div>Valor inválido: Fale um número entre ${menorValor} e ${maiorValor}</div>
         `
@@ -28,12 +28,4 @@ function verificaSeOChutePossuiUmValorValido(chute) {
         `
     }
  
-}
-
-function chuteForInvalido(numero) {
-    return Number.isNaN(numero)
-}
-
-function numeroForMaiorOuMenorQueOValorPermitido(numero){
-    return numero > maiorValor || numero < menorValor
 }
