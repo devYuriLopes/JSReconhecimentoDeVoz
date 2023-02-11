@@ -21,12 +21,12 @@ function verificaSeOChutePossuiUmValorValido(chute) {
             `
     } else if (numero > numeroSecreto){
         elementoChute.innerHTML += ` 
-        <div> O número secreto é menor <i class="fa-sharp fa-solid fa-arrow-up">
+        <div> O número secreto é menor <i class="fa-sharp fa-solid fa-arrow-down">
         </div> 
         `
     } else {
         elementoChute.innerHTML += `
-        <div> O número secreto é maior <i class="fa-sharp fa-solid fa-arrow-down">
+        <div> O número secreto é maior <i class="fa-sharp fa-solid fa-arrow-up">
         </div>
         `
     }
